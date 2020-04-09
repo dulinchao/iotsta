@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.club.iotclub.dao.UserMapper">
+    <insert id="addUser" parameterType="com.club.iotclub.pojo.User">
+        insert into user(student_id, name, sex, college, profession, create_time)
+        values (#{studentId},#{name},#{sex},#{college},#{profession},#{createTime})
+    </insert>
+</mapper>
